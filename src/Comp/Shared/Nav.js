@@ -29,6 +29,7 @@ const Nav = () => {
             <li className='font-semibold  normal-case text-xl'><Link to='/blogs'>Blogs</Link></li>
 
             <li className='font-semibold  normal-case text-xl'><Link to='/category'>Ctegory</Link></li>
+            <li className='font-semibold  normal-case text-xl'><Link to='/adv'>ADV</Link></li>
 
 
 

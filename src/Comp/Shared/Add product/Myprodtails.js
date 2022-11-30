@@ -29,14 +29,23 @@ const Myprodtails = ({ card }) => {
                         console.log(data)
                     }
                 }
-
-
-
-
-
-
             })
     }
+    const advertize = (card) => {
+        fetch(`http://localhost:5000/advertize/${card._id}`, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json',
+
+            }
+        })
+
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+            })
+    }
+
     const closeMdoal = () => {
         setdelete(null);
     }
@@ -62,7 +71,7 @@ const Myprodtails = ({ card }) => {
 
                 </div>
                 <p></p>
-                <button className="btn btn-accent">Advertise</button>
+                <button className="btn btn-accent" onClick={() => advertize(card)}>Advertise</button>
 
             </div>
             {

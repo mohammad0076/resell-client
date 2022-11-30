@@ -40,8 +40,8 @@ const Mydsh = () => {
                     </thead>
                     <tbody>
 
-                        {
-                            bookings.map((booking, i) => <tr>
+                        {bookings.length &&
+                            bookings?.map((booking, i) => <tr>
                                 <th>{i + 1}</th>
                                 <td>{booking.item}</td>
                                 <td>{booking.price}</td>

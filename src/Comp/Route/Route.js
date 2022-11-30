@@ -20,6 +20,7 @@ import Blog from "../Vlog/Blog";
 import AdminRoute from "./Admin/AdminRoute";
 import UserRoute from "./userRoute/Userroute";
 import ff from './404-not-found-error-explained-2622936-Final-fde7be1b7e2e499c9f039d97183e7f52.jpg'
+import Adv from "../Shared/Add product/Adv";
 
 export const router = createBrowserRouter([{
     path: '/',
@@ -44,6 +45,11 @@ export const router = createBrowserRouter([{
         {
             path: "/blogs",
             element: <Blog></Blog>
+
+        },
+        {
+            path: "/adv",
+            element: <Adv></Adv>
 
         },
         {
