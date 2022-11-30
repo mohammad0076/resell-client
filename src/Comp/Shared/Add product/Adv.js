@@ -11,7 +11,7 @@ const Adv = () => {
         queryKey: ['addedpro'],
         queryFn: async () => {
             try {
-                const res = await fetch(`http://localhost:5000/addedbook`, {
+                const res = await fetch(`https://oobbss-server.vercel.app/addedbook`, {
                     headers: {
                         authorization: `bearer ${localStorage.getItem('acccessToken')}`
                     }

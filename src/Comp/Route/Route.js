@@ -55,12 +55,12 @@ export const router = createBrowserRouter([{
         {
             path: "/category",
             element: <Cat></Cat>,
-            loader: () => fetch('http://localhost:5000/categorys/')
+            loader: () => fetch('https://oobbss-server.vercel.app/categorys/')
 
         },
         {
             path: "/category/:id",
-            loader: ({ params }) => fetch(`http://localhost:5000/category/${params.id}`),
+            loader: ({ params }) => fetch(`https://oobbss-server.vercel.app/category/${params.id}`),
             element: <PrivateRoute><Dtails></Dtails></PrivateRoute>
 
         },
@@ -77,7 +77,7 @@ export const router = createBrowserRouter([{
 },
 {
     path: '/dashboard',
-    loader: () => fetch('http://localhost:5000/users/Seller'),
+    loader: () => fetch('https://oobbss-server.vercel.app/users/Seller'),
     element: <PrivateRoute><Dashboardlayout></Dashboardlayout></PrivateRoute>,
     children: [
         {

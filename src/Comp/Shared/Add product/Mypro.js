@@ -13,7 +13,7 @@ const Mypro = () => {
         queryKey: ['addedpro'],
         queryFn: async () => {
             try {
-                const res = await fetch(`http://localhost:5000/addedbook`, {
+                const res = await fetch(`https://oobbss-server.vercel.app/addedbook`, {
                     headers: {
                         authorization: `bearer ${localStorage.getItem('acccessToken')}`
                     }
@@ -35,7 +35,7 @@ const Mypro = () => {
             }
 
             <div className='grid lg:grid-cols-3 sm:grid-cols-1'>
-                {adedbook?.map(card => <Myprodtails  card={card}></Myprodtails>)}
+                {adedbook?.map(card => <Myprodtails card={card}></Myprodtails>)}
             </div>
         </div>
     );

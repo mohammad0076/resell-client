@@ -33,8 +33,8 @@ const Login = () => {
                     options: "Buyer",
                     email: user.email
                 }
-                // http://localhost:5000/users
-                fetch('http://localhost:5000/users', {
+                // https://oobbss-server.vercel.app/users
+                fetch('https://oobbss-server.vercel.app/users', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
@@ -73,8 +73,8 @@ const Login = () => {
                     email: data.email
 
                 }
-                // http://localhost:5000/users
-                fetch('http://localhost:5000/users', {
+                // https://oobbss-server.vercel.app/users
+                fetch('https://oobbss-server.vercel.app/users', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'

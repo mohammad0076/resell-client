@@ -54,7 +54,7 @@ const Signup = () => {
 
     const saveUser = (name, email, option) => {
         const user = { name, email, option };
-        fetch('http://localhost:5000/users', {
+        fetch('https://oobbss-server.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -80,7 +80,7 @@ const Signup = () => {
 
     }
     // const getUserToken = email => {
-    //     fetch(`http://localhost:5000/jwt?email=${email}`)
+    //     fetch(`https://oobbss-server.vercel.app/jwt?email=${email}`)
     //         .then(res => res.json())
     //         .then(data => {
     //             if (data.acccessToken) {
@@ -106,8 +106,8 @@ const Signup = () => {
                     //     options: "Buyer",
                     //     email: user.email
                     // }
-                    // // http://localhost:5000/users
-                    // fetch('http://localhost:5000/users', {
+                    // // https://oobbss-server.vercel.app/users
+                    // fetch('https://oobbss-server.vercel.app/users', {
                     //     method: 'POST',
                     //     headers: {
                     //         'content-type': 'application/json'

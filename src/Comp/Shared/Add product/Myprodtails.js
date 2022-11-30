@@ -13,7 +13,7 @@ const Myprodtails = ({ card }) => {
     const [deleteing, setdelete] = useState(null);
     const [laodin, setlodi] = useState(false)
     const deletungg = (card) => {
-        fetch(`http://localhost:5000/addedbook/${card._id}`, {
+        fetch(`https://oobbss-server.vercel.app/addedbook/${card._id}`, {
             method: 'DELETE',
             headers: {
                 'content-type': 'application/json',
@@ -32,7 +32,7 @@ const Myprodtails = ({ card }) => {
             })
     }
     const advertize = (card) => {
-        fetch(`http://localhost:5000/advertize/${card._id}`, {
+        fetch(`https://oobbss-server.vercel.app/advertize/${card._id}`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
